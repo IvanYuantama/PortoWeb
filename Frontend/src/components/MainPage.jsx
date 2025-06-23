@@ -157,7 +157,7 @@ const MainPage = () => {
 
             {/* Teks intro */}
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 transition-opacity duration-700">
-              I’m Ivan Yuantama Pradipta, a passionate Computer Engineering student focused on embedded systems, IoT, and full-stack development. I love building real-world impact through smart, scalable solutions.
+              I’m Ivan Yuantama Pradipta, a passionate Computer Engineering student focused on blockchain, AI, IoT, network, and also full-stack development. I love building real-world impact through smart, scalable solutions.
             </p>
 
             {/* Tombol Download CV */}
