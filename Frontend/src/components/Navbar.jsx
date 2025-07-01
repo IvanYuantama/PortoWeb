@@ -13,6 +13,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     { label: "Projects", href: "#projects" },
     { label: "Certificates", href: "#certificate" },
     { label: "Contact", href: "#contact" },
+    { label: "ChatBot", href: "#chatbot" },
   ];
 
   return (
