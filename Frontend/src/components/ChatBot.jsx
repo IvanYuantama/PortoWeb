@@ -22,7 +22,7 @@ const ChatBot = () => {
         method: "POST",
         headers: {
           Authorization: "Bearer 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",
-          "HTTP-Referer": "https://www.sitename.com",
+          "HTTP-Referer": "https://ivanyuantama-web.vercel.app",
           "X-Title": "SiteName",
           "Content-Type": "application/json",
         },
