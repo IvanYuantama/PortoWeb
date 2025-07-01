@@ -315,6 +315,17 @@ const MainPage = () => {
             </a>
           </div>
         </section>
+
+        {/* ChatBot Redirect Section */}
+        <section id="chatbot" className="py-20 px-4 md:px-16 bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">Try My AI ChatBot!</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-8">Curious about something? Ask anything to my integrated chatbot powered by DeepSeek AI.</p>
+            <a href="/chatbot">
+              <button className="px-8 py-4 bg-green-600 text-white rounded-full shadow-md hover:shadow-lg hover:bg-green-700 transition duration-300 text-lg font-semibold">Go to ChatBot</button>
+            </a>
+          </div>
+        </section>
       </div>
     </div>
   );
