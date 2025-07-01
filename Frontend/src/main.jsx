@@ -5,6 +5,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom"
 
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import MainPage from "./components/MainPage.jsx";
+import ChatBot from "./components/ChatBot.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="/home" />,
+  },
+  {
+    path: "/chatbot",
+    element: <ChatBot />,
   },
   {
     path: "/error",
