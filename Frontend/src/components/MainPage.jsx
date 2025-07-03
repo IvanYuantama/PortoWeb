@@ -113,7 +113,7 @@ const MainPage = () => {
       title: "Portofolio - Web",
       link: "https://ivanyuantama-web.vercel.app",
       description:
-        "A personal portfolio website built with ReactJS, Tailwind CSS, and SwiperJS, showcasing projects and skills in web development and AI with a clean, responsive, dark mode-enabled design.",
+        "This is a personal portfolio website showcasing my projects, experiences, and skills in web development and AI. Built with ReactJS, Tailwind CSS, and SwiperJS, the site features a clean, responsive design with support for dark mode and interactive project previews.",
     },
     {
       img: "https://i.imghippo.com/files/DKk3997Cbk.png",
