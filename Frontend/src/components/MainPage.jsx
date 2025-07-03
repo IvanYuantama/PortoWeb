@@ -58,6 +58,12 @@ const MainPage = () => {
       description:
         "Built a responsive, full-stack news portal with real-time updates, personalized content, and interactive features using ReactJS, Tailwind CSS, Node.js, Express.js, and PostgreSQL, including a CMS for streamlined publishing and admin tasks.",
     },
+    {
+      img: "https://i.imghippo.com/files/UMG4325YI.png",
+      title: "Automation, AI, and Blockchain System Intern - Pusat Data dan Informasi Kementrian PU",
+      description:
+        "Built a Web 3.0 application for issuing and verifying blockchain-based certificates, an AI-powered facial recognition system for secure room access, and an IoT-based automatic lighting system to improve energy efficiency and workplace convenience.",
+    },
   ];
 
   const educationExperiences = [
@@ -88,6 +94,27 @@ const MainPage = () => {
   ];
 
   const projectExperiences = [
+    {
+      img: "https://i.imghippo.com/files/zcf3651aFM.png",
+      title: "Sertifikat Magang Pusdatin PU - Web 3.0 (Blockchain)",
+      link: "https://sertifikatmagang-pupr.vercel.app/",
+      description:
+        "SertifikatMagang Pusdatin PU is a Web 3.0 app for publishing and verifying internship certificates using blockchain. Built with ReactJS, Hardhat, and NeonDB, and deployed on Vercel with Alchemy Sepolia for on-chain verification.",
+    },
+    {
+      img: "https://i.imghippo.com/files/XJzL5001VmQ.png",
+      title: "ChatBot - Web",
+      link: "https://ivanyuantama-web.vercel.app/chatbot",
+      description:
+        "Chatbot is a web-based AI project that uses DeepSeek LLM to simulate human-like conversations. This chatbot was built using modern web technologies and deployed via Vercel as part of my portfolio.",
+    },
+    {
+      img: "https://i.imghippo.com/files/zBM6860Kc.png",
+      title: "Portofolio - Web",
+      link: "https://ivanyuantama-web.vercel.app",
+      description:
+        "A personal portfolio website built with ReactJS, Tailwind CSS, and SwiperJS, showcasing projects and skills in web development and AI with a clean, responsive, dark mode-enabled design.",
+    },
     {
       img: "https://i.imghippo.com/files/DKk3997Cbk.png",
       title: "VChat - Web",
