@@ -60,7 +60,7 @@ const MainPage = () => {
     },
     {
       img: "https://i.imghippo.com/files/UMG4325YI.png",
-      title: "Automation, AI, and Blockchain System Intern - Pusat Data dan Informasi Kementrian PU",
+      title: "IoT and Blockchain System Intern - Pusat Data dan Informasi Kementrian PU",
       description:
         "Built a Web 3.0 application for issuing and verifying blockchain-based certificates, an AI-powered facial recognition system for secure room access, and an IoT-based automatic lighting system to improve energy efficiency and workplace convenience.",
     },
