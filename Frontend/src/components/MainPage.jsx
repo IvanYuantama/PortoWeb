@@ -319,26 +319,34 @@ const MainPage = () => {
         {/* Contact */}
         <section id="contact" className="py-20 px-4 md:px-16 bg-gray-100 dark:bg-gray-800">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Contact</h2>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {/* Email */}
-            <a href="mailto:ivan@example.com" className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+            <a href="mailto:ivanyuantama.work@gmail.com" className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               <Mail className="mx-auto text-blue-500 mb-3" size={32} />
               <p className="font-semibold text-gray-800 dark:text-white">Email</p>
-              <p className="text-blue-500 text-sm mt-1">ivanyuantama.work@gmail.com</p>
             </a>
 
             {/* LinkedIn */}
             <a href="https://linkedin.com/in/ivanyuantama" target="_blank" className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               <Linkedin className="mx-auto text-blue-600 mb-3" size={32} />
               <p className="font-semibold text-gray-800 dark:text-white">LinkedIn</p>
-              <p className="text-blue-500 text-sm mt-1">linkedin.com/in/ivanyuantama</p>
             </a>
 
             {/* Instagram */}
             <a href="https://instagram.com/ivan_yuantama" target="_blank" className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
               <Instagram className="mx-auto text-pink-500 mb-3" size={32} />
               <p className="font-semibold text-gray-800 dark:text-white">Instagram</p>
-              <p className="text-blue-500 text-sm mt-1">@ivan_yuantama</p>
+            </a>
+
+            {/* GitHub */}
+            <a href="https://github.com/IvanYuantama" target="_blank" className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-3" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fill="currentColor"
+                  d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.6 7.6 0 012 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.001 8.001 0 0016 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+              <p className="font-semibold text-gray-800 dark:text-white">GitHub</p>
             </a>
           </div>
         </section>
