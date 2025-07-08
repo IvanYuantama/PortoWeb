@@ -17,35 +17,19 @@ const ChatBot = () => {
     setLoading(true);
     setResponse("");
 
-    try {
+      try {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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",
           "HTTP-Referer": "https://ivanyuantama-web.vercel.app",
           "X-Title": "SiteName",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-    "model": "google/gemini-2.5-pro",
-    "messages": [
-      {
-        "role": "user",
-        "content": [
-          {
-            "type": "text",
-            "text": input
-          },
-          {
-            "type": "image_url",
-            "image_url": {
-              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
-            }
-          }
-        ]
-      }
-    ]
-  }),
+          model: "deepseek/deepseek-r1:free",
+          messages: [{ role: "user", content: input }],
+        }),
       });
 
       const data = await res.json();
