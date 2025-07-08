@@ -21,7 +21,7 @@ const ChatBot = () => {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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",
           "HTTP-Referer": "https://ivanyuantama-web.vercel.app",
           "X-Title": "SiteName",
           "Content-Type": "application/json",
