@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { marked } from "marked";
-import { Loader2 } from "lucide-react"; // Spinner icon
+import { Loader2 } from "lucide-react";
 
 const ChatBot = () => {
   const [input, setInput] = useState("");
@@ -17,26 +17,31 @@ const ChatBot = () => {
     setLoading(true);
     setResponse("");
 
-      try {
+    try {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
           Authorization: "Bearer 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",
           "HTTP-Referer": "https://ivanyuantama-web.vercel.app",
-          "X-Title": "SiteName",
+          "X-Title": "IvanYuantama Portfolio",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "deepseek/deepseek-r1-0528:free",
+          model: "deepseek/deepseek-r1:free", 
           messages: [{ role: "user", content: input }],
         }),
       });
 
       const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error?.message || `HTTP Error: ${res.status}`);
+      }
+
       const markdownText = data.choices?.[0]?.message?.content || "No response received.";
       setResponse(marked.parse(markdownText));
     } catch (error) {
-      setResponse("Error: " + error.message);
+      setResponse(`**Error:** ${error.message}`);
     } finally {
       setLoading(false);
     }
@@ -53,21 +58,24 @@ const ChatBot = () => {
             placeholder="Enter your question..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
             className="px-5 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 dark:bg-gray-800 dark:text-white transition-all"
           />
 
-          <Button onClick={sendMessage} disabled={loading} className="w-fit self-center px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md transition-all">
+          <Button 
+            onClick={sendMessage} 
+            disabled={loading} 
+            className="w-fit self-center px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md transition-all"
+          >
             Ask!
           </Button>
 
-          {/* Spinner below the button */}
           {loading && (
             <div className="flex justify-center items-center mt-2">
               <Loader2 className="animate-spin h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             </div>
           )}
 
-          {/* Response */}
           <div
             id="response"
             className={`mt-6 p-5 rounded-lg text-justify bg-gray-100 dark:bg-gray-800 shadow-md prose dark:prose-invert max-w-none transition-all duration-300 ${loading || !response ? "opacity-50" : "opacity-100"}`}
