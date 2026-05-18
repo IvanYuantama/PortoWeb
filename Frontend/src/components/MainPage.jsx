@@ -47,7 +47,7 @@ const MainPage = () => {
 
   const workExperiences = [
     {
-      img: "https://www.imghippo.com/i/rqNb7733Xr.png",
+      img: "https://i.imghippo.com/files/rqNb7733Xr.png",
       title: "Junior iOS Developer - Apple Developer Academy",
       description:
         "Developed an iOS-based To Do List application with an automated scheduling feature, built a photo management application named Phoof, and created a digital assistance tool for emergency situations, contributing to application flow, media management, and user interface design.",
