@@ -415,14 +415,6 @@ export default function MainPage() {
         "A decentralized Web 3.0 platform for issuing and verifying internship certificates on-chain. Built with ReactJS, Hardhat, and NeonDB, deployed on Vercel with Alchemy Sepolia ensuring tamper-proof credential management.",
     },
     {
-      img: "https://i.imghippo.com/files/LI7030zA.png",
-      title: "AI ChatBot",
-      link: "https://ivanyuantama-web.vercel.app/chatbot",
-      tag: "AI · Web",
-      description:
-        "An AI-powered conversational chatbot leveraging the DeepSeek LLM to deliver fluid, context-aware responses. Integrated directly into my portfolio as a live demonstration of applied AI in modern web development.",
-    },
-    {
       img: "https://i.imghippo.com/files/GPc2799dNI.png",
       title: "VChat",
       link: "https://github.com/IvanYuantama/VChat",
@@ -605,7 +597,7 @@ export default function MainPage() {
               ))}
             </div>
             <a
-              href="https://drive.google.com/file/d/1XdfIW2ZGI0Ecu7d4GoA7oJYrpSK-3O7d/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cQE55ccAhc8aeGUWVoaAGCTJtpQjG0nA/view?usp=sharing"
               className="pf-cv-btn"
               target="_blank"
               rel="noreferrer"
@@ -793,15 +785,6 @@ export default function MainPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section id="chatbot" className="pf-cta">
-        <div className="pf-cta-text">
-          Got a question? Try my <em>AI chatbot</em>.
-        </div>
-        <a href="/chatbot" className="pf-cta-btn">
-          Open ChatBot <ArrowUpRight size={14} />
-        </a>
-      </section>
 
       {/* FOOTER */}
       <footer className="pf-footer">
